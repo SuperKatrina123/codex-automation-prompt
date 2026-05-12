@@ -30,7 +30,7 @@ Gmail 推送依赖 Codex 环境里的 Gmail connector/app 授权，不需要 Chr
 如果当前 Codex 环境还没有这个 skill，可以对 Codex 说：
 
 ```text
-请从 https://github.com/SuperKatrina123/codex-automation-prompt 安装 skills/ai-daily-radar-automation 这个 skill。
+请从 https://github.com/SuperKatrina123/codex-automations 安装 skills/ai-daily-radar-automation 这个 skill。
 ```
 
 安装后，可以对 Codex 说：

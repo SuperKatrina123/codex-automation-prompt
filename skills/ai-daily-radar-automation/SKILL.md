@@ -1,6 +1,6 @@
 ---
 name: ai-daily-radar-automation
-description: Use when the user asks to install, create, set up, or update an AI Daily Radar Codex automation/workflow from the codex-automation-prompt repo. Handles preflight checks for an information-fetching skill, defaulting to aihot / AI HOT, Gmail delivery, recipient and label placeholders, weekday scheduling, and Codex automation creation.
+description: Use when the user asks to install, create, set up, or update an AI Daily Radar Codex automation/workflow from the codex-automations repo. Handles preflight checks for an information-fetching skill, defaulting to aihot / AI HOT, Gmail delivery, recipient and label placeholders, weekday scheduling, and Codex automation creation.
 ---
 
 # AI Daily Radar Automation
@@ -56,4 +56,3 @@ Keep placeholders in reusable repo files:
 - `GMAIL_LABEL_NAME`
 
 Only fill them inside the actual Codex automation prompt after the user provides or confirms the values.
-
