@@ -1,0 +1,8 @@
+interface:
+  display_name: "AI Daily Radar Automation"
+  short_description: "Install the AI Daily Radar Codex workflow"
+  default_prompt: "Use $ai-daily-radar-automation to install my AI Daily Radar automation."
+
+policy:
+  allow_implicit_invocation: true
+

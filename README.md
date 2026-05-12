@@ -9,6 +9,7 @@
 | 文件 | 用途 |
 |---|---|
 | `prompts/ai-daily-radar.md` | 工作日 AI Daily Radar：默认抓取过去 24 小时 AI HOT 精选源，也可替换成其他信息抓取 skill；整理应用层趋势、术语、趋势翻译、练习任务，并通过 Gmail 推送。 |
+| `skills/ai-daily-radar-automation/SKILL.md` | Codex Skill：用于安装或更新 AI Daily Radar 自动化工作流，会做 skill/Gmail 前置检查并创建 Codex automation。 |
 
 ## 前置依赖
 
@@ -24,11 +25,37 @@ Gmail 推送依赖 Codex 环境里的 Gmail connector/app 授权，不需要 Chr
 
 ## 建议用法
 
+### 安装 skill
+
+如果当前 Codex 环境还没有这个 skill，可以对 Codex 说：
+
+```text
+请从 https://github.com/SuperKatrina123/codex-automation-prompt 安装 skills/ai-daily-radar-automation 这个 skill。
+```
+
+安装后，可以对 Codex 说：
+
+```text
+用 AI Daily Radar automation skill 帮我创建自动流。
+```
+
+### 直接复制 prompt
+
 1. 在 `prompts/` 目录下为每个自动化新建一个 Markdown 文件。
 2. 文件里记录触发时间、目标、前置依赖、输入来源、输出格式、推送方式和失败处理规则。
 3. 在 Codex app 创建或更新自动化前，先安装所需 skill 并连接所需 app。
 4. 在 Codex app 创建或更新自动化时，把对应 prompt 内容复制进去。
 5. 每次调整自动化逻辑后，同步更新这里的 prompt，保留变更历史。
+
+### 作为 Codex Skill 使用
+
+把 `skills/ai-daily-radar-automation/` 安装到 Codex skills 目录后，可以直接对 Codex 说：
+
+```text
+用 AI Daily Radar automation skill 帮我创建自动流。
+```
+
+Codex 会按 skill 流程检查信息抓取 skill、Gmail connector、收件人和标签变量，然后创建或更新自动化。
 
 ## 命名约定
 
