@@ -10,6 +10,7 @@
 |---|---|
 | `prompts/` | 可直接复制到 Codex automation 的 prompt 模板 |
 | `skills/` | 可安装的 Codex Skill，用于引导 Codex 创建或更新自动流 |
+| `examples/` | 已发送或可参考的自动化输出示例 |
 
 ## 当前工作流
 
@@ -82,4 +83,3 @@ Gmail 推送依赖 Codex 环境里的 Gmail connector/app 授权，不需要 Chr
 - `skills/` 下每个目录对应一个可安装 Codex Skill。
 - 一个 prompt 或 skill 只描述一个自动化工作流。
 - 调整自动流后，同步更新 prompt 和 skill reference，避免 Codex app 里的版本与仓库版本漂移。
-
